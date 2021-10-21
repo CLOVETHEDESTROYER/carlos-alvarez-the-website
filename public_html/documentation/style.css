@@ -3,5 +3,6 @@ body {
 }
 
 img {
-    size: 50px;
+    max-width: 100%;
+    height: auto;
 }
