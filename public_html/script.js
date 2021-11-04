@@ -1,4 +1,4 @@
-import { tween } from 'popmotion';
+import { } from 'popmotion';
 
 const element = document.querySelector('.ball');
 
