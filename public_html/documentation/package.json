@@ -1,7 +1,7 @@
 {
-  "name": "$name$",
-  "version": "$version$",
+  "name": "documentation",
+  "version": "1.0.0",
   "dependencies": {
-    $END$
-  }
+  },
+  "type": "module"
 }

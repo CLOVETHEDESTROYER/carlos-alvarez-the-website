@@ -30,12 +30,11 @@ img {
 
 .stroke {
     h-shadow: 1;
-    v-shadow:
 }
 
 /*
 Sticky navbar
 */
-.navbar {
+.sticky-top {
     position: sticky;
 }
