@@ -1,0 +1,41 @@
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navbar {
+    position: sticky;
+}
+
+body {
+    background-color: azure;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.stroke {
+    h-shadow: 1;
+    v-shadow:
+}
+
+/*
+Sticky navbar
+*/
+.navbar {
+    position: sticky;
+}

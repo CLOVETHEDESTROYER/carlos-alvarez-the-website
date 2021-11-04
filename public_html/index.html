@@ -9,49 +9,32 @@
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
           rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
 </head>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <!-- Image and text -->
-    <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-            <img src="documentation/img/Carlos%20Alvarez%20Sigil%20(navbar%20logo).png" width="30" height="30"
-                 class="d-inline-block align-top" alt="Carlos Alvarez logo">
-            Carlos Alvarez
-        </a>
-    </nav>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+<header>
+    <nav id="scrollID" class="navbar navbar-light bg-light sticky-top">
+        <img src="documentation/img/Carlos%20Alvarez%20Sigil%20(navbar%20logo).png">
+        <a class="navbar-brand" href="#">Carlos Alvarez</a>
+        <ul class="navbar-nav sm-icons">
+            <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-instagram"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-twitter"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-pinterest-p"></i></a></li>
+        </ul>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link" href="#About">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" data-toggle="dropdown" href="#Projects">Projects</a>
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                   aria-haspopup="true" aria-expanded="false">
-                    Projects
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
+            <li class="nav-item">
+                <a class="nav-link" href="#Contact">Contact</a>
             </li>
-            <ul class="navbar-nav sm-icons">
-                <li class="nav-item"><a class="nav-link" href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                <li class="nav-item"><a class="nav-link" href="#"><i class="fa-brands fa-github-square"></i></a></li>
-            </ul>
         </ul>
-    </div>
-</nav>
+    </nav>
+</header>
+<div data-spy="scroll" data-target="#scrollID" data-offset="0">
 <body class="$font-family-sans-serif:Roboto">
 
 <section>
@@ -59,8 +42,8 @@
         <div class="row centered text-white">
             <div class="col">
                 <div class="text-right stroke">
-                <h1>Carlos Alvarez</h1>
-                <h4> Web Development/Creative/Blockchain</h4>
+                    <h1>Carlos Alvarez</h1>
+                    <h4> Web Development/Creative/Blockchain</h4>
                 </div>
             </div>
         </div>
@@ -76,40 +59,44 @@
 About Me Section
 -->
 <div class="container clearfix bg-light mt-5 max-width: 100%">
-    <h1 class="p-3 ml-5 mt-3">About Carlos</h1>
+    <h1 class="p-3 ml-5 mt-3" id="About">About Carlos</h1>
     <div class="row">
         <div class="col">
-            <img src="documentation/img/Squinty%20Carlos.jpg" class="img-fluid d-block float-md-end p-5" alt="good boi">
+            <img src="documentation/img/Squinty%20Carlos.jpg" class="img-responsive d-block float-md-end p-5" alt="good boi">
         </div>
         <div class="col-6 mt-5">
             <p>Carlos Alvarez is a business development professional with experience working with large corporate giants
                 as well as extensive experience operating and managing a growing small business. His interests in
                 technology have spanned back to the 56k modem and his commitment to learning is unmatched by his peers.
             </p>
-
         </div>
     </div>
-</div>
 </div>
 
 <!--
 Projects-->
 
-<div class="container-fluid mx-5 mt-5 bg-info">
+<div class="container-fluid mx-5 mt-5 bg-info" id="Projects">
     <div class="row align-items-start mr-5 gx-5 mb-5 gy-5">
         <div class="col-sm-4 text-center">
-            <h3>Business Development</h3>
-            <img src="documentation/img/money.png" class="d-block rounded-circle" width="200" height="200" alt="Money man">
+            <h3 id="projects">Business Development</h3>
+            <img src="documentation/img/money.png" class="d-block rounded-circle ml-5" width="200" height="200"
+                 alt="Money man">
             <div class="border p-2 bg-light rounded mt-4 d-inline-flex justify-content-center" style="width: 250px">
-                <p> Carlos Has extensive experience in business development working directly with Fortune 100 companies.  His most recent experience has led him to operating a successful local business that has grown to 30 people with over 1 million in annual sales.  He knows how to implement successful business strategies and data analysis to increase sales and grow your business.  </p>
+                <p> Carlos Has extensive experience in business development working directly with Fortune 100 companies.
+                    His most recent experience has led him to operating a successful local business that has grown to 30
+                    people with over 1 million in annual sales. He knows how to implement successful business strategies
+                    and data analysis to increase sales and grow your business. </p>
             </div>
         </div>
         <div class="col-sm-4 text-center rounded-circle">
             <h3>Web Development</h3>
             <img src="documentation/img/Paleta%20pal%20social%20club%20(super%20rare).png"
-                 class="img-fluid d-block rounded" alt="rare paleta pal">
+                 class="img-fluid d-block rounded" alt="rare paleta pal" width="200" height="200">
             <div class="border p-2 bg-light rounded mt-4 d-inline-flex justify-content-center" style="width: 250px">
-                <p> The internet is not just a passing fad and it's safe to say it is here to stay.  Connect with me to see how I can help you with your technology based solutions to include web and mobile site development, Salesforce implementations and more. </p>
+                <p> The internet is not just a passing fad and it's safe to say it is here to stay. Connect with me to
+                    see how I can help you with your technology based solutions to include web and mobile site
+                    development, Salesforce implementations and more. </p>
             </div>
         </div>
         <div class="col-sm-4 text-center">
@@ -117,7 +104,11 @@ Projects-->
             <img src="documentation/img/Paleta%20pal%20social%20club%20(super%20rare).png"
                  class="img-fluid d-block rounded-circle" alt="rare paleta pal">
             <div class="border p-2 bg-light rounded mt-4 d-inline-flex" style="width: 250px">
-                <p> Web 1.0 introduced the internet.  Web 2.0 introduced social media and Web 3 is about to revolutionize how we consume content and how we physically live.  With large companies already jumping into blockchain and NFT technologies the future is bright for Web 3 developers.  We specialize in blockchain technologies and Solidity development as well as creating Non-fungible tokens for business with massive utility. </p>
+                <p> Web 1.0 introduced the internet. Web 2.0 introduced social media and Web 3 is about to revolutionize
+                    how we consume content and how we physically live. With large companies already jumping into
+                    blockchain and NFT technologies the future is bright for Web 3 developers. We specialize in
+                    blockchain technologies and Solidity development as well as creating Non-fungible tokens for
+                    business with massive utility. </p>
             </div>
         </div>
     </div>
@@ -126,7 +117,7 @@ Projects-->
 
 <!--//Contact Form//-->
 
-<form class="m-5 p-3">
+<form class="m-5 p-3" id="Contact">
     <div class="form-row">
         <div class="col-md-4 mb-3">
             <label for="validationDefault01">First name</label>
@@ -172,7 +163,7 @@ Projects-->
     <button class="btn btn-primary" type="submit">Submit form</button>
 </form>
 
-
+</div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
