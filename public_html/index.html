@@ -23,7 +23,7 @@
             </li>
             <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-instagram"></i></a></li>
             <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-twitter"></i></a></li>
-            <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-pinterest-p"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-github"></i></a></li>
         </ul>
         <ul class="nav nav-pills">
             <li class="nav-item">
@@ -43,11 +43,11 @@
 
     <section>
         <div class="container-fluid">
-            <div class="row centered text-white">
+            <div class="row text-dark">
                 <div class="col">
                     <div class="text-right stroke">
-                        <h1>Carlos Alvarez</h1>
-                        <h4> Web Development/Creative/Blockchain</h4>
+                        <h4>Hello, I'm</h4>
+                        <h2>Carlos Alvarez</h2>
                     </div>
                 </div>
             </div>
@@ -63,10 +63,10 @@
     -->
     <div class="container">
         <div class="row">
-            <div class="clearfix bg-light mt-5 max-width: 100%" id="About">
+            <div class="col clearfix bg-light mt-5 max-width: 100%" id="About">
                 <h2 class="ml-5">About Carlos</h2>
                 <img src="documentation/img/Squinty%20Carlos.jpg" class="img-fluid d-block col-md-6 float-md-start mb-3 ms-md-3 p-5" alt="good boi">
-                <div class="mx-4 p-5">
+                <div class="col mx-4 p-5">
                     <p>Carlos Alvarez is a business development professional with experience working with large corporate
                         giants
                         as well as extensive experience operating and managing a growing small business. His interests in
@@ -82,7 +82,7 @@
     <!--
     Projects-->
 
-    <div class="container-fluid mx-5 mt-5 bg-info" id="Projects">
+    <div class="container p-2 m-5  bg-light border" id="Projects">
         <div class="row align-items-start mr-5 gx-5 mb-5 gy-5">
             <div class="col-sm-4 text-center">
                 <h3>Business Development</h3>
@@ -101,7 +101,7 @@
             <div class="col-sm-4 text-center rounded-circle">
                 <h3>Web Development</h3>
                 <img src="documentation/img/Paleta%20pal%20social%20club%20(super%20rare).png"
-                     class="img-fluid d-block rounded" alt="rare paleta pal" width="200" height="200">
+                     class="img-fluid d-block rounded-circle" alt="rare paleta pal" width="200" height="200">
                 <div class="border p-2 bg-light rounded mt-4 d-inline-flex justify-content-center" style="width: 250px">
                     <p> The internet is not just a passing fad and it's safe to say it is here to stay. Connect with me
                         to
@@ -127,11 +127,12 @@
 
 
     <!--//Contact Form//-->
+    <div class="container border">
     <h2 class="ml-5" id="contactForm"> Contact Me</h2>
 
     <form action="./apis/" class="m-5 p-3" id="contact" method="post" novalidate>
         <div class="form-row">
-            <div class="col-md-4 mb-3">
+            <div class="col-sm-4 mb-3">
                 <label for="firstName">First name</label>
                 <input type="text" class="form-control" id="firstName" placeholder="First name" value=""
                        required>
@@ -146,7 +147,7 @@
                 <div class="input-group">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="inputGroupPrepend2"><i
-                                class="fa-solid fa-envelope"></i></span>
+                                class="fas-solid fa-envelope"></i>📧</span>
                     </div>
                     <input type="text" class="form-control" id="email" placeholder="Email Address"
                            aria-describedby="inputGroupPrepend2" required>
@@ -159,9 +160,11 @@
                 <input type="text" class="form-control" id="message" placeholder="add your message" required>
             </div>
         </div>
+        <div class="g-recaptcha" data-sitekey="6LdghxcdAAAAANjbdg9dxlNElW9S1721gHg60yOC"></div>
         <button class="btn btn-primary" type="submit">Submit form</button>
         <button class="btn btn-primary" type="reset">Reset</button>
     </form>
+    </div>
 <!--
     End Contact form
 -->
@@ -181,7 +184,8 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-<!-- Google Recaptcha__>
+<!-- Google Recaptcha-->
+ <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 <-- custom jquery script-->
 
