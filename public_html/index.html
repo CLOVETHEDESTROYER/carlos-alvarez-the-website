@@ -14,7 +14,8 @@
 <header>
     <nav id="scrollID" class="navbar navbar-light bg-light sticky-top">
         <a class="navbar-brand" href="#">
-            <img src="documentation/img/Carlos%20Alvarez%20Sigil%20(navbar%20logo).png" class="d-inline-block align-center" alt="Carlos Alvarez logo">
+            <img src="documentation/img/Carlos%20Alvarez%20Sigil%20(navbar%20logo).png"
+                 class="d-inline-block align-center" alt="Carlos Alvarez logo">
             Carlos Alvarez
         </a>
         <ul class="navbar-nav sm-icons">
@@ -34,26 +35,30 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#contactForm">Contact</a>
+            <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/in/socialnetwork/"><img src="documentation/img/linkedin.svg" width="16px" height="16px" alt="Carlos' LinkedIn link"></a></li>
             </li>
-        </ul>
+            <li class="nav-item">
+                <a class="nav-link" href="https://github.com/CLOVETHEDESTROYER"><img src="documentation/img/github.svg" width="16px" height="16px" alt="Carlos' Github link"></a></li>
+            </li>
     </nav>
 </header>
 <div data-spy="scroll" data-target="#scrollID" data-offset="0">
     <body class="$font-family-sans-serif:Roboto">
-
     <section>
         <div class="container-fluid">
             <div class="row text-dark">
-                <div class="col">
-                    <div class="text-right stroke">
+                <div class="card">
+                    <img src="documentation/img/Carlos%20Fall%202021.2.jpg" alt="Carlos Alvarez"
+                         class="p-3 mb-2 img-responsive card-img">
+                    <div class="col-4 offset-6 card-img-overlay text-white d-flex justify-content-center align-items-baseline mr-3 p-5">
                         <h4>Hello, I'm</h4>
-                        <h2>Carlos Alvarez</h2>
+                        <br>
+                        <h2 class="display-4">Carlos Alvarez</h2>
                     </div>
+
                 </div>
-            </div>
-            <div class="bg-light">
-                <img src="documentation/img/Carlos%20Fall%202021.2.jpg" alt="Carlos Alvarez"
-                     class="p-3 mb-2 bg-gradient-info text-white img-responsive max-width: 100%; and height: auto">
+                </div>
             </div>
         </div>
     </section>
@@ -61,20 +66,19 @@
     <!--
     About Me Section
     -->
-    <div class="container">
-        <div class="row">
-            <div class="col clearfix bg-light mt-5 max-width: 100%" id="About">
-                <h2 class="ml-5">About Carlos</h2>
-                <img src="documentation/img/Squinty%20Carlos.jpg" class="img-fluid d-block col-md-6 float-md-start mb-3 ms-md-3 p-5" alt="good boi">
-                <div class="col mx-4 p-5">
-                    <p>Carlos Alvarez is a business development professional with experience working with large corporate
-                        giants
-                        as well as extensive experience operating and managing a growing small business. His interests in
-                        technology have spanned back to the 56k modem and his commitment to learning is unmatched by his
-                        peers.
 
-                    </p>
-                </div>
+<h2 class="ml-5 display-4">About Carlos</h2>
+    <div class="container-fluid bg-light p-2">
+        <div class="row">
+            <div class="col-sm m-2 p-2" id="About">
+                <img src="documentation/img/Squinty%20Carlos.jpg" class="img-fluid" alt="good boi">
+            </div>
+            <div class="col-sm m-2 p-2">
+                I am a business development professional with experience working with large corporate
+                    giants
+                    as well as extensive experience operating and managing a growing small business. His interests in
+                    technology have spanned back to the 56k modem and his commitment to learning is unmatched by his
+                    peers.
             </div>
         </div>
     </div>
@@ -83,7 +87,7 @@
     Projects-->
 
     <div class="container p-2 m-5  bg-light border" id="Projects">
-        <div class="row align-items-start mr-5 gx-5 mb-5 gy-5">
+        <div class="row align-items-start m-5 gx-5">
             <div class="col-sm-4 text-center">
                 <h3>Business Development</h3>
                 <img src="documentation/img/money.png" class="d-block rounded-circle ml-5" width="200" height="200"
@@ -111,7 +115,7 @@
             </div>
             <div class="col-sm-4 text-center">
                 <h3>Web 3 Development</h3>
-                <img src="documentation/img/Paleta%20pal%20social%20club%20(super%20rare).png"
+                <img src="documentation/img/PaletaPal(rare).png"
                      class="img-fluid d-block rounded-circle" alt="rare paleta pal">
                 <div class="border p-2 bg-light rounded mt-4 d-inline-flex" style="width: 250px">
                     <p> Web 1.0 introduced the internet. Web 2.0 introduced social media and Web 3 is about to
@@ -127,53 +131,60 @@
 
 
     <!--//Contact Form//-->
+<h2 class="ml-5 display-4" id="contactForm"> Contact Me</h2>
     <div class="container border">
-    <h2 class="ml-5" id="contactForm"> Contact Me</h2>
-
-    <form action="./apis/" class="m-5 p-3" id="contact" method="post" novalidate>
-        <div class="form-row">
-            <div class="col-sm-4 mb-3">
-                <label for="firstName">First name</label>
-                <input type="text" class="form-control" id="firstName" placeholder="First name" value=""
-                       required>
-            </div>
-            <div class="col-md-4 mb-3">
-                <label for="validationDefault02">Last name</label>
-                <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" value=""
-                       required>
-            </div>
-            <div class="col-md-4 mb-3">
-                <label for="email">Email</label>
-                <div class="input-group">
-                    <div class="input-group-prepend">
+        <a class="nav-link" href="https://www.linkedin.com/in/socialnetwork/"><img src="documentation/img/linkedin.svg" width="50px" height="50px" alt="Carlos' LinkedIn link"></a>
+        <form action="./apis/" class="m-5 p-3" id="contact" method="post" novalidate>
+            <div class="form-row">
+                <div class="col-sm-4 mb-3">
+                    <label for="firstName">First name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="First name" value=""
+                           required>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="validationDefault02">Last name</label>
+                    <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" value=""
+                           required>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="email">Email</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
                         <span class="input-group-text" id="inputGroupPrepend2"><i
                                 class="fas-solid fa-envelope"></i>📧</span>
+                        </div>
+                        <input type="text" class="form-control" id="email" placeholder="Email Address"
+                               aria-describedby="inputGroupPrepend2" required>
                     </div>
-                    <input type="text" class="form-control" id="email" placeholder="Email Address"
-                           aria-describedby="inputGroupPrepend2" required>
                 </div>
             </div>
-        </div>
-        <div class="form-row">
-            <div class="col-md-6 mb-3">
-                <label for="message">message</label>
-                <input type="text" class="form-control" id="message" placeholder="add your message" required>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="message">message</label>
+                    <input type="text" class="form-control" id="message" placeholder="add your message" required>
+                </div>
             </div>
-        </div>
-        <div class="g-recaptcha" data-sitekey="6LdghxcdAAAAANjbdg9dxlNElW9S1721gHg60yOC"></div>
-        <button class="btn btn-primary" type="submit">Submit form</button>
-        <button class="btn btn-primary" type="reset">Reset</button>
-    </form>
+            <div class="g-recaptcha" data-sitekey="6LdghxcdAAAAANjbdg9dxlNElW9S1721gHg60yOC"></div>
+            <button class="btn btn-primary" type="submit">Submit form</button>
+            <button class="btn btn-primary" type="reset">Reset</button>
+        </form>
     </div>
-<!--
-    End Contact form
--->
+    <!--
+        End Contact form
+    -->
     <div id="output-area"></div>
 
 </div>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js" integrity="sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/additional-methods.min.js" integrity="sha512-XZEy8UQ9rngkxQVugAdOuBRDmJ5N4vCuNXCh8KlniZgDKTvf7zl75QBtaVG1lEhMFe2a2DuA22nZYY+qsI2/xA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"
+        integrity="sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/additional-methods.min.js"
+        integrity="sha512-XZEy8UQ9rngkxQVugAdOuBRDmJ5N4vCuNXCh8KlniZgDKTvf7zl75QBtaVG1lEhMFe2a2DuA22nZYY+qsI2/xA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>-->
@@ -185,7 +196,7 @@
         crossorigin="anonymous"></script>
 
 <!-- Google Recaptcha-->
- <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 <-- custom jquery script-->
 

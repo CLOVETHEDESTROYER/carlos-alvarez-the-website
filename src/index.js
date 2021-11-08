@@ -13,7 +13,7 @@ const validation = [
     check("name", "A valid name is required").not().isEmpty().trim().escape(),
     check("email", "Please provide a valid email address").isEmail(),
     check("subject").optional().trim().escape(),
-    check("message", "Message must be between 1 and 1000 characters").trim().escape().isLength({min:1, max:1000})
+    check("message", "Message must be between 1 and 1000 characters").trim().escape().isLength({min:1, max:1000}),
 ]
 
 const app = express()
@@ -49,7 +49,7 @@ recaptcha error. Please try again</div>`
 )
     }
 
-    const {email, subject, name, message = request.body}
+    const {email, subject, name, message} = request.body
 
     const mailgunData = {
     to: process.env.MAIL_RECIPIENT,
