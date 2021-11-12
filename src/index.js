@@ -60,7 +60,7 @@ recaptcha error. Please try again</div>`
     mg.messages.create(process.env.MAILGUN_DOMAIN, mailgunData)
         .then(msg =>
             response.send(
-                `<div class='alert alert-success' role= 'alert' >${JSON.stringify(msg)}</div>`
+                `<div class='alert alert-success' role= 'alert' >Email was successfully sent</div>`
             ))
         .catch(err =>
             response.send(
