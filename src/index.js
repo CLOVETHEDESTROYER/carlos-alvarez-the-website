@@ -146,7 +146,7 @@ const handlePostRequest = (request, response) => {
             ))
         .catch(err =>
             response.send(
-                `<div class='alert alert-danger' role='alert'><strong>Oh Snap!</strong>${err}</div>`
+                `<div class='alert alert-danger' role='alert'><strong>Damn Daniel Something went wrong!</strong>${err}</div>`
             ))
 
 }

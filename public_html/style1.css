@@ -22,7 +22,7 @@ body {
 }
 */
 
-img {
+.img-main {
     max-width: 100%;
     height: auto;
 }
