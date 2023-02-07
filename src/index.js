@@ -77,8 +77,8 @@ app.use("/apis",indexRoute)
 
 app.listen(4200, () => {
     console.log("Express Successfully built")
+)
 */
-})
 
 const express = require("express")
 const morgan = require("morgan")
